@@ -1,9 +1,28 @@
-<header class="headerDiv">
-    <img src="/assets/downloads/img/logo.png" alt="">
-    <div>
-        <a href="">1</a>
-        <a href="">2</a>
-        <a href="">3</a>
-        <a href="">4</a>
-    </div>
+<header [class.headerDark] = "darkMode">
+
+
+
+
+
+
+  <img
+    *ngIf="!darkMode"
+    routerLink="/"
+    src="/assets/downloads/img/logo.png"
+    alt=""
+  />
+
+  <img
+    *ngIf="darkMode"
+    routerLink="/"
+    src="/assets/downloads/img/logoBlack.png"
+    alt=""
+  />
+
+  <div [class.darkLinks] = "darkMode">
+    <a routerLink="/">Home</a>
+    <a routerLink="/data-protection">Data Protection</a>
+    <a href="#">Projects</a>
+    <a routerLink="/imprint">Imprint</a>
+  </div>
 </header>
