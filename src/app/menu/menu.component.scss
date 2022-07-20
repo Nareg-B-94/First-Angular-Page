@@ -1,0 +1,16 @@
+.headerDiv{
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 80px;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+
+    img {
+        height: 120px;
+        width: 100px;
+    }
+}
